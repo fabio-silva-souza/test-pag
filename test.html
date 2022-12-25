@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* Clip text element */
+ .clip-text {
+	 font-size: 6em;
+	 font-weight: bold;
+	 line-height: 1;
+	 position: relative;
+	 display: inline-block;
+	 margin: 0.25em;
+	 padding: 0.5em 0.75em;
+	 text-align: center;
+	/* Color fallback */
+	 color: #fff;
+	 background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+ .clip-text:before, .clip-text:after {
+	 position: absolute;
+	 content: '';
+}
+/* Background */
+ .clip-text:before {
+	 z-index: -2;
+	 top: 0;
+	 right: 0;
+	 bottom: 0;
+	 left: 0;
+	 background-image: inherit;
+}
+/* Text Background (black zone) */
+ .clip-text:after {
+	 position: absolute;
+	 z-index: -1;
+	 top: 0.125em;
+	 right: 0.125em;
+	 bottom: 0.125em;
+	 left: 0.125em;
+	 background-color: #000;
+}
+/* Change the background position to display letter when the black zone isn't here */
+ .clip-text--no-textzone:before {
+	 /* background-position: -0.75em 0; */
+}
+ .clip-text--no-textzone:after {
+	 /* content: none; */
+}
+/* Use Background-size cover for photo background and no-repeat background */
+ .clip-text--cover, .clip-text--cover:before {
+	 /* background-repeat: no-repeat;
+	 -webkit-background-size: cover;
+	 background-size: cover;
+	 background-position: 50% 50%; */
+}
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+ /* .clip-text_one {
+	 background-image: url(https://picsum.photos/480/200?random);
+}
+ .clip-text_two {
+	 background-image: url(https://picsum.photos/480/200?grayscale);
+} */
+ .clip-text_tree {
+	 background-image: url(https://picsum.photos/480/200?grayscale&random=2);
+}
+ /* .clip-text_four {
+	 background-image: url(https://picsum.photos/480/200?grayscale&blur=3);
+}
+ .clip-text_five {
+	 background-image: url(https://picsum.photos/480/200?grayscale);
+}
+ .clip-text_six {
+	 background-image: url(https://picsum.photos/480/200?random=3);
+}
+ .clip-text_seven {
+	 background-image: url(https://picsum.photos/480/200?random=4);
+}
+ .clip-text_eight {
+	 background-image: url(https://picsum.photos/480/200?random=6);
+}
+ .clip-text_nine {
+	 background-image: url(https://picsum.photos/480/200?random=5);
+}
+ .clip-text_ten {
+	 background-image: url(https://picsum.photos/480/200?random=7);
+}
+ .clip-text_eleven {
+	 background-image: url(https://picsum.photos/480/200?random=8);
+	 background-size: cover;
+}
+ .clip-text_twelve {
+	 background-image: url(https://picsum.photos/480/200?random=9);
+}
+ .clip-text_thirteen {
+	 background-image: url(https://picsum.photos/480/200?random=10);
+} */
+ /* .clip-text_fourteen {
+	 background-image: url(https://picsum.photos/480/200?random=11);
+}
+ .clip-text_fifteen {
+	 background-image: url(https://picsum.photos/480/200?random=12);
+} */
+    </style>
+</head>
+<body>
+    <!-- <div class="clip-text clip-text_one">Juntos</div>
+    <div class="clip-text clip-text_fifteen clip-text--no-textzone">Tudo</div>
+        <div class="clip-text clip-text_twelve clip-text--cover">Demais</div>
+    <div class="clip-text clip-text_tree clip-text--no-textzone">Hohoh</div>
+        <div class="clip-text clip-text_two">TAtata</div>
+        <div class="clip-text clip-text_fourteen clip-text--cover">JINTOS</div> -->
+        <div class="clip-text clip-text_tree">BUriBuri</div>
+        <!-- <div class="clip-text clip-text_eleven clip-text--cover">JINTOS</div>
+        <div class="clip-text clip-text_four">Honto</div>
+        <div class="clip-text clip-text_five">baba</div>
+        <div class="clip-text clip-text_six">Seila</div>
+        <div class="clip-text clip-text_seven">deded</div>
+        <div class="clip-text clip-text_eight">role</div> -->
+        
+</body>
+</html>
