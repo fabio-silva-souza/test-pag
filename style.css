@@ -40,7 +40,7 @@ nav ul
     display: flex;
     list-style-type: none;
     text-align: center;
-    width: 500px;
+    width: 50%;
     justify-content: space-evenly;
 }
 nav ul li
@@ -105,6 +105,7 @@ a
     text-align: center;
     top: 30%;
     align-items: center;  
+    transition: 0.2s;
     /* background-clip: text;
     color: transparent; */
 }
@@ -151,6 +152,7 @@ a
     height: 500px;
     margin: 10px;
     border-radius: 10px;
+    transition: 0.2s;
 }
 /* ===================================== */
 #galery
@@ -254,4 +256,40 @@ footer div
 footer div:last-child
 {
     right: 5%;
+}
+/* ============================================ */
+@media only screen and (max-width: 900px) {
+    /* .title-center
+    {
+        transition: 0.2s;
+        font-size: 6.2rem;
+    } */
+    nav ul
+    {
+        position: relative;
+        margin: 90px 170px 0 0;
+        width: 30%;
+        height: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #B2D2A4;
+        border-radius: 15px;
+        
+    }
+    .title-center
+    {
+        font-size: 4rem;
+        text-orientation: upright;
+        transform: rotate(360deg);
+        margin:-150px 10px 0 -160px;
+        writing-mode: vertical-rl;
+    }
+    #about img
+    {
+        transition: 0.2s;
+        position: absolute;
+        /* z-index: -1; */
+        opacity: 0.3;
+    }
 }
